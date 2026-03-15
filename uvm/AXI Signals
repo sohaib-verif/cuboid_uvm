@@ -1,0 +1,92 @@
+							AXI Slave Signals:
+Write address channel signals:
+AWADDR[14:0]                             Input   
+AWID[NUM_WID_BITS-1:0]			             Input    
+AWLEN[7:0]                               Input
+AWSIZE[2:0]                              Input
+AWUSER[2:0]                              Input
+AWBURST[1:0]                             Input
+AWPROT[2:0]                              Input
+AWVALID                                  Input
+AWREADY                                  Output
+
+
+Write data channel signal
+WDATA[31:0]                              Input
+WSTRB[3:0]                               Input
+WVALID                                   Input
+WREADY                                   Output
+
+
+Write response channel signal
+BID[NUM_WID_BITS-1:0]                    Output
+BRESP[1:0]                               Output
+BREADY                                   Input 
+BVALID                                   Output
+
+Read address channel signals:
+ARADDR[14:0]                             Input 
+ARID[NUM_RID_BITS-1:0]                   Input 
+ARLEN[7:0]                               Input 
+ARSIZE[2:0]                              Input 
+ARUSER[2:0]                              Input 
+ARBURST[1:0]                    I        Input 
+ARPROT[2:0]                              Input 
+ARVALID                                  Input 
+ARREADY                                  Output
+
+Read data channel signals:
+RID[NUM_RID_BITS-1:0]                    Output 
+RDATA[31:0]                              Output 
+RRESP[1:0]                               Output 
+RLAST                                    Output 
+RVALID                                   Output 
+RREADY                                   Input
+
+
+
+
+							AXI Master signals:
+Write address channel signals:
+AWADDR[14:0]                             Output   
+AWID[NUM_WID_BITS-1:0]			             Output    
+AWLEN[7:0]                               Output
+AWSIZE[2:0]                              Output
+AWUSER[63:0]                             Output
+AWBURST[1:0]                             Output
+AWPROT[2:0]                              Output
+AWVALID                                  Output
+AWREADY                                  Input
+
+
+Write data channel signal
+WDATA[31:0]                              Output
+WSTRB[3:0]                               Output
+WVALID                                   Output
+WREADY                                   Input
+
+
+Write response channel signal
+BID[NUM_WID_BITS-1:0]                    Input
+BRESP[1:0]                               Input
+BREADY                                   Output 
+BVALID                                   Input
+
+Read address channel signals:
+ARADDR[14:0]                             Output 
+ARID[NUM_RID_BITS-1:0]                   Output 
+ARLEN[7:0]                               Output 
+ARSIZE[2:0]                              Output 
+ARUSER[2:0]                              Output 
+ARBURST[1:0]                    I        Output 
+ARPROT[2:0]                              Output 
+ARVALID                                  Output 
+ARREADY                                  Input
+
+Read data channel signals:
+RID[NUM_RID_BITS-1:0]                    Input 
+RDATA[31:0]                              Input 
+RRESP[1:0]                               Input 
+RLAST                                    Input 
+RVALID                                   Input 
+RREADY                                   Output
