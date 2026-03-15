@@ -3,7 +3,8 @@
 Cuboid Processor - UVM Verification Environment
 This repository contains a Verilog implementation of a Cuboid Processor and a complete UVM (Universal Verification Methodology) testbench to verify its functionality.
 The design takes dimensions (Length, Width, Height) serially and calculates the total Surface Area, Volume, and Perimeter of the cuboid.
-🛠 Design Specifications
+
+Design Specifications
 The cuboid_prcr module processes three 16-bit inputs and produces three 32-bit outputs sequentially.
 
 Control Signaling:
